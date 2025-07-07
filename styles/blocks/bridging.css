@@ -1,0 +1,51 @@
+.bridging{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bridging__title{
+    font-size: 80px;
+
+    background: linear-gradient(120.79deg, #242424 3.25%, #E92129 75.17%);
+
+    background-clip: text;
+    color: transparent;
+}
+
+.bridging-img{
+    margin-top: 120px;
+}
+
+@media (max-width:1366px){
+    .bridging__title{
+        font-size: 70px;
+    }
+
+    .bridging-img{
+        width: 585px;
+        height: 528px;
+    }
+}
+
+@media(max-width:1024px){
+    .bridging__title{
+        font-size: 50px;
+    }
+
+    .bridging-img{
+        width: 505px;
+        height: 448px;
+    }
+}
+
+@media(max-width:800px){
+    .bridging__title{
+        font-size: 40px;
+    }
+
+     .bridging-img{
+        width: 485px;
+        height: 428px;
+    }
+}

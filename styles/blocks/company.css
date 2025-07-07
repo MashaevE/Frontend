@@ -1,0 +1,42 @@
+.company{
+    display: flex;
+
+    height: 173px;
+    margin-top: 195px;
+    
+    background: #000000;
+}
+
+.company__img-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+
+    column-gap: 24.75px;
+}
+
+.company__img{
+    transform: translateX(-20px);
+}
+
+@media (max-width:1366px){
+    .company__img-list{
+        gap:0;
+    }
+
+    .company__img{
+        width: 200px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .company {
+        height: 120px;
+        margin-top: 100px;
+    }
+    .company__img {
+        width: 120px;
+    }
+}

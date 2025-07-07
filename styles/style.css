@@ -1,0 +1,17 @@
+/*Контейнерный стиль*/
+@import 'base/container.css';
+
+
+@import 'base/normalize.css';
+
+/*Стили блоков*/
+@import 'blocks/header.css';
+@import 'blocks/bridging.css';
+@import 'blocks/about.css';
+@import 'blocks/Service.css';
+@import 'blocks/portfolio.css';
+@import 'blocks/company.css';
+@import 'blocks/testimonial.css';
+@import 'blocks/book.css';
+@import 'blocks/print.css';
+@import 'blocks/footer.css';

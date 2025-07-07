@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__list {
+    list-style-type: none;
+    margin-right: 26px;
+}
+
+.header__list-item {
+    display: inline;
+
+    margin-right: 16px;
+}
+
+.header__item-link {
+    color: #2F2F2F;
+
+    text-decoration: none;
+}
+
+.header__nav-button {
+    height: 50px;
+
+    border-radius: 12px;
+
+    color: #FFFFFF;
+    background-color: #E92129;
+
+    cursor: pointer;
+}

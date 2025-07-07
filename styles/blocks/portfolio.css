@@ -1,0 +1,104 @@
+.portfolio {
+    display: flex;
+    align-items: center;
+
+    margin-right: 59px;
+
+    height: 475px;
+}
+
+.portfolio__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.portfolio__title {
+    font-size: 80px;
+    margin-bottom: 0;
+}
+
+.portfolio__button {
+    height: 52px;
+
+    border-radius: 12px;
+    border-style: none;
+
+    font-size: 16px;
+
+    background: #E92129;
+    color: white;
+}
+
+.portfolio__description {
+    font-size: 18px;
+    color: #1C1C1C;
+
+}
+
+.portfolio__slider {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 95px;
+}
+
+/* .portfolio__bank-img,
+.portfolio__soider-img {
+    width: 495px;
+    height: 315px;
+} */
+
+.slider-btn {
+    text-align: end;
+}
+
+.slider-btn-prev,
+.slider-btn-next {
+
+    border-radius: 50%;
+    border-style: none;
+
+    width: 50px;
+    height: 50px;
+
+    color: white;
+    background: red;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+}
+
+.portfolio__bank-img,
+.portfolio__soider-img {
+    display: none;
+}
+
+
+@media (max-width:1366px) {
+    .portfolio__title {
+        font-size: 60px;
+    }
+
+    .portfolio__game-img {
+        width: 638px;
+        height: 342px;
+    }
+}
+
+@media (max-width:1024px) {
+    .portfolio__title {
+        font-size: 40px;
+    }
+
+    .portfolio__game-img {
+        width: 520px;
+        height: 330px;
+    }
+}
+
+@media (max-width:800px) {
+    .portfolio__title {
+        font-size: 30px;
+    }
+}

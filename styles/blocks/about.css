@@ -1,0 +1,60 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 135px;
+}
+
+.about__title{
+    margin-right: 80px;
+
+    font-size: 80px;
+    color: #242424;
+}
+
+.about__subtitle{
+    font-size: 32px;
+}
+
+.about__description{
+    margin-top: 33px;
+    font-size: 20px;
+}
+
+.about__coments{
+    color: #000000;
+}
+
+.about__comments__history{
+    display: flex;
+    gap:80px;
+    margin-top: 33px;
+}
+
+.about-numerus{
+    margin: 0;
+    font-size: 50px;
+}
+
+.about-numerus-span{
+    color: #E4252C;
+    font-size: 50px;
+}
+
+.about__description-comments{
+    margin: 0;
+
+    font-size: 16px;
+}
+
+@media (max-width:1024px) {
+    .about__title{
+        font-size:60px;
+        margin-right: 40px;
+    }
+
+    .about__comments__history{
+        gap:40px
+    }
+}
