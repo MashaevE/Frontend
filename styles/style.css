@@ -15,3 +15,12 @@
 @import 'blocks/book.css';
 @import 'blocks/print.css';
 @import 'blocks/footer.css';
+
+/* Шрифты */
+@import 'base/fonts.css';
+
+/* Загрузка */
+@import 'blocks/preloader.css';
+
+@import 'blocks/form.css';
+

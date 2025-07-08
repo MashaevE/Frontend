@@ -4,11 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>NIXXSOL</title>
+    <title>Nixxsol</title>
 </head>
 
 <body>
+
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+
     <header class="header container">
         <img src="img/logo.png" alt="Логотип" class="header__logo-img">
         <nav class="header__nav">
@@ -82,8 +91,17 @@
             </div>
 
             <div class="service__card-container">
-                <div class="service__card_level-1">
-                    <div class="service__card">
+                <div class="service__card-level-1">
+                    <!-- <div class="service__card service__card-1">
+                        <img src="img/ps_lab.png" alt="Лабораторный Флакон" class="service__flacon-img">
+                        <div class="service__comment">
+                            <h2 class="service__card-title">Фирменный дизайн</h2>
+                            <p class="service__card-description">Благодарим вас за проявленный интерес к нашей компании
+                                и добро пожаловать в нашу компанию. Со мной все в порядке, но теперь я убираю его в
+                                холодильник на Хэллоуин, фанаты.</p>
+                        </div>
+                    </div>
+                    <div class="service__card service__card-2">
                         <img src="img/ps_lab.png" alt="Лабораторный Флакон" class="service__flacon-img">
                         <div class="service__comment">
                             <h2 class="service__card-title">Фирменный дизайн</h2>
@@ -109,19 +127,10 @@
                                 и добро пожаловать в нашу компанию. Со мной все в порядке, но теперь я убираю его в
                                 холодильник на Хэллоуин, фанаты.</p>
                         </div>
-                    </div>
-                    <div class="service__card">
-                        <img src="img/ps_lab.png" alt="Лабораторный Флакон" class="service__flacon-img">
-                        <div class="service__comment">
-                            <h2 class="service__card-title">Фирменный дизайн</h2>
-                            <p class="service__card-description">Благодарим вас за проявленный интерес к нашей компании
-                                и добро пожаловать в нашу компанию. Со мной все в порядке, но теперь я убираю его в
-                                холодильник на Хэллоуин, фанаты.</p>
-                        </div>
-                    </div>
+                    </div>-->
                 </div>
-                <div class="service__card_level-2">
-                    <div class="service__card">
+                <div class="service__card-level-2">
+                    <!-- <div class="service__card">
                         <img src="img/ps_lab.png" alt="Лабораторный Флакон" class="service__flacon-img">
                         <div class="service__comment">
                             <h2 class="service__card-title">Фирменный дизайн</h2>
@@ -157,8 +166,8 @@
                                 холодильник на Хэллоуин, фанаты.</p>
                         </div>
                     </div>
+                </div> -->
                 </div>
-            </div>
         </section>
 
         <section class="portfolio container">
@@ -168,20 +177,24 @@
                     элементом.</p>
                 <button class="portfolio__button">Больше портфолий ></button>
             </div>
-            <div class="portfolio__slider">
-                <div class="portfolio__slider-img">
-                    <img src="img/game.png" alt="Игры" class="portfolio__game-img">
-                    <div class="portfolio__slider-btn slider-btn">
-                        <button class="portfolio__slider-btn-prev slider-btn-prev">
-                            < </button>
-                                <button class="portfolio__slider-btn-next slider-btn-next">></button>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/game.png" alt="Игра" class="portfolio__img portfolio__game-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/bank.png" alt="Банк" class="portfolio__img portfolio__bank-img">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/soider.png" alt="Сайт" class="portfolio__img portfolio__soider-img">
                     </div>
 
                 </div>
-                <img src="img/bank.png" alt="Банк" class="portfolio__bank-img">
-                <img src="img/soider.png" alt="Сайт" class="portfolio__soider-img">
-            </div>
-
+                <div class="swiper-button">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
         </section>
 
         <section class="company container">
@@ -200,40 +213,53 @@
                 <p class="testimonial__description">
                     Лорем ипсум - основная команда. Теперь это будет успокаивающим элементом.
                 </p>
-                <button class="testimonial__button">Исследовать</button>
+                <button class="testimonial__button">Исследовать ></button>
             </div>
-            <div class="testimonial__slider">
-                <div class="testimonial__slider-card testimonial-card-1 ">
-                    <div class="card__content">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card__content">
                         <img src="img/Adam.png" alt="Адам смитх" class="testimonial__icon-img">
                         <h2 class="testimonial__text-name">Адам Смитх</h2>
+                        </div>
+                        <div class="card__content-block">
+                            <p class="testimonial__card-description">“Морковка Lorem ipsum, расширенный конкурс среди
+                                студентов.
+                                Прическу следует запекать в микроволновке в виде горшочка. Разнообразный, но
+                                производительный
+                                продукт est, удобный для партнеров-потребителей. Элайджа, я отстранен от работы из-за
+                                смерти
+                                Лео перед лицом злого человека. Анализ массажа обязателен и прост. Элайджа, я отстранен
+                                от
+                                работы из-за смерти Лео перед лицом злого человека. Анализ массажа важен и прост
+                                Анализ массажа обязателен и прост. Элайджа, Лео отстраняет меня от игры прямо в лицо.”
+                            </p>
+                        </div>
                     </div>
-                    <p class="testimonial__card-description">“Морковка Lorem ipsum, расширенный конкурс среди студентов.
-                        Прическу следует запекать в микроволновке в виде горшочка. Разнообразный, но производительный
-                        продукт est, удобный для партнеров-потребителей. Элайджа, я отстранен от работы из-за смерти
-                        Лео перед лицом злого человека. Анализ массажа обязателен и прост. Элайджа, я отстранен от
-                        работы из-за смерти Лео перед лицом злого человека. Анализ массажа важен и прост
-                        Анализ массажа обязателен и прост. Элайджа, Лео отстраняет меня от игры прямо в лицо.”</p>
-                    <div class="testimonial__slider-btn slider-btn">
-                        <button class="testimonial__slider-btn-prev slider-btn-prev">
-                            < </button>
-                                <button class="testimonial__slider-btn-next slider-btn-next">></button>
-                    </div>
+                    
 
-                </div>
-                <div class="testimonial__slider-card testimonial-card-2">
-                    <div class="card__content">
-                        <img src="img/MikeIcon.png" alt="Майк" class="testimonial__icon-img">
-                        <h2 class="testimonial__text-name">Майк</h2>
+
+                    <div class="swiper-slide">
+                        <div class="card__content">
+                            <img src="img/MikeIcon.png" alt="Майк" class="testimonial__icon-img">
+                            <h2 class="testimonial__text-name">Майк</h2>
+                        </div>
+                        <p class="testimonial__card-description">“Морковка Lorem ipsum, расширенный конкурс среди
+                            студентов.
+                            Прическу следует запекать в микроволновке в виде горшочка. Разнообразный, но
+                            производительный
+                            продукт est, удобный для партнеров-потребителей. Элайджа, я отстранен от работы из-за смерти
+                            Лео перед лицом злого человека. Анализ массажа обязателен и прост. Элайджа, я отстранен от
+                            работы из-за смерти Лео перед лицом злого человека. Анализ массажа важен и прост
+                            Анализ массажа обязателен и прост. Элайджа, Лео отстраняет меня от игры прямо в лицо.”</p>
                     </div>
-                    <p class="testimonial__card-description">“Морковка Lorem ipsum, расширенный конкурс среди студентов.
-                        Прическу следует запекать в микроволновке в виде горшочка. Разнообразный, но производительный
-                        продукт est, удобный для партнеров-потребителей. Элайджа, я отстранен от работы из-за смерти
-                        Лео перед лицом злого человека. Анализ массажа обязателен и прост. Элайджа, я отстранен от
-                        работы из-за смерти Лео перед лицом злого человека. Анализ массажа важен и прост
-                        Анализ массажа обязателен и прост. Элайджа, Лео отстраняет меня от игры прямо в лицо.”</p>
+                </div>
+                <div class="swiper-button">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
+
         </section>
 
         <section class="book container">
@@ -287,7 +313,7 @@
     </main>
     <footer class="footer container">
         <div class="footer__content">
-        <img src="img/logoFooter.png" alt="Логотип" class="footer__logo">
+            <img src="img/logoFooter.png" alt="Логотип" class="footer__logo">
 
             <div class="footer__contacts">
                 <div class="footer__contacts-block footer__contacts-number">
@@ -308,12 +334,12 @@
             </div>
             <div class="footer__info">
                 <nav class="footer__nav-list">
-                <ul class="footer__list">
-                    <li class="footer__list-item"><a href="#" class="footer__item-link">О нас</a></li>
-                    <li class="footer__list-item"><a href="#" class="footer__item-link">Сервисы</a></li>
-                    <li class="footer__list-item"><a href="#" class="footer__item-link">Портфолио</a></li>
-                    <li class="footer__list-item"><a href="#" class="footer__item-link">Контакты</a></li>
-                </ul>
+                    <ul class="footer__list">
+                        <li class="footer__list-item"><a href="#" class="footer__item-link">О нас</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__item-link">Сервисы</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__item-link">Портфолио</a></li>
+                        <li class="footer__list-item"><a href="#" class="footer__item-link">Контакты</a></li>
+                    </ul>
                 </nav>
                 <div class="footer__blank">
                     <h2 class="footer__title">Оставайтесь на связи</h2>
@@ -325,14 +351,35 @@
             </div>
         </div>
         <div class="footer__bottom">
-                <p class="footer__botoom-copyright">&copy; 2022 Nixxsol All Rights Reserved.</p>
-                <div class="footer__social__network-block">
-                    <img src="img/facebook.png" alt="Фейсбук" class="footer__social__network-img">
-                    <img src="img/instagram.png" alt="Инстаграм" class="footer__social__network-img">
-                    <img src="img/twitter.png" alt="Твиттер" class="footer__social__network-img">
-                </div>
+            <p class="footer__botoom-copyright">&copy; 2022 Nixxsol All Rights Reserved.</p>
+            <div class="footer__social__network-block">
+                <img src="img/facebook.png" alt="Фейсбук" class="footer__social__network-img">
+                <img src="img/instagram.png" alt="Инстаграм" class="footer__social__network-img">
+                <img src="img/twitter.png" alt="Твиттер" class="footer__social__network-img">
             </div>
+        </div>
     </footer>
+
+    <div class="modal">
+
+
+        <form class="form">
+            <h2 class="form-title">Зарегестрироваться</h2>
+            <div class="form__content">
+                <label for="name" class="form__contnent-label">Имя</label>
+                <input type="text" placeholder="Имя" class="form__content-input" id="name" required>
+                <label for="email" class="form__contnent-label">Почта</label>
+                <input type="email" placeholder="Почта" class="form__content-input" id="email" required>
+            </div>
+            <div class="form__content-button">
+                <input type="submit" class="form__button form__button-submit" value="Зарегестрироваться">
+                <button class="form__button  form__button-close">Отмена</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
