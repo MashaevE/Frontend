@@ -1,4 +1,5 @@
 .about{
+    font-family: "Proxima Nova", sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -7,6 +8,7 @@
 }
 
 .about__title{
+    font-weight: 800;
     margin-right: 80px;
 
     font-size: 80px;
@@ -14,11 +16,14 @@
 }
 
 .about__subtitle{
+    font-weight: 400;
     font-size: 32px;
 }
 
 .about__description{
     margin-top: 33px;
+
+    font-weight: 400;
     font-size: 20px;
 }
 
@@ -34,18 +39,29 @@
 
 .about-numerus{
     margin: 0;
+
+    font-weight: 700;
     font-size: 50px;
 }
 
 .about-numerus-span{
     color: #E4252C;
+
+    font-weight: 700;
     font-size: 50px;
 }
 
 .about__description-comments{
     margin: 0;
 
+    font-weight: 400;
     font-size: 16px;
+}
+
+@media (max-width:1366px){
+    .about__comments__history{
+        gap: 50px;
+    }
 }
 
 @media (max-width:1024px) {
@@ -55,6 +71,16 @@
     }
 
     .about__comments__history{
-        gap:40px
+        gap:40px;
+    }
+}
+
+@media (max-width:800px){
+    .about__comments__history{
+        gap:30px;
+    }
+
+    .about__title{
+        font-size: 50px;
     }
 }

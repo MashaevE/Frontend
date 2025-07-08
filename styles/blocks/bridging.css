@@ -1,4 +1,5 @@
 .bridging{
+    font-family: "Proxima Nova", sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6,6 +7,7 @@
 
 .bridging__title{
     font-size: 80px;
+    font-weight: 800;
 
     background: linear-gradient(120.79deg, #242424 3.25%, #E92129 75.17%);
 
@@ -14,28 +16,29 @@
 }
 
 .bridging-img{
+    width: 600px;
     margin-top: 120px;
 }
 
 @media (max-width:1366px){
     .bridging__title{
-        font-size: 70px;
+        font-size: 65px;
     }
 
     .bridging-img{
-        width: 585px;
-        height: 528px;
+        width: 545px;
+        height: 488px;
     }
 }
 
 @media(max-width:1024px){
     .bridging__title{
-        font-size: 50px;
+        font-size: 45px;
     }
 
     .bridging-img{
-        width: 505px;
-        height: 448px;
+        width: 495px;
+        height: 438px;
     }
 }
 

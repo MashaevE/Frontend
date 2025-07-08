@@ -1,4 +1,5 @@
 .portfolio {
+    font-family: "Proxima Nova", sans-serif;
     display: flex;
     align-items: center;
 
@@ -15,8 +16,38 @@
 }
 
 .portfolio__title {
+    font-weight: 800;
     font-size: 80px;
+
     margin-bottom: 0;
+}
+
+.portfolio__img {
+    width: 698px;
+    height: 402px;
+}
+
+.swiper-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto 0; 
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    border-radius: 50%;
+    border-style: none;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background: red;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    z-index: 10;
+    position: relative;
 }
 
 .portfolio__button {
@@ -25,6 +56,7 @@
     border-radius: 12px;
     border-style: none;
 
+    font-weight: 700;
     font-size: 16px;
 
     background: #E92129;
@@ -32,52 +64,16 @@
 }
 
 .portfolio__description {
+    font-weight: 400;
     font-size: 18px;
+
     color: #1C1C1C;
 
 }
 
-.portfolio__slider {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    gap: 95px;
-}
-
-/* .portfolio__bank-img,
-.portfolio__soider-img {
-    width: 495px;
-    height: 315px;
-} */
-
-.slider-btn {
-    text-align: end;
-}
-
-.slider-btn-prev,
-.slider-btn-next {
-
-    border-radius: 50%;
-    border-style: none;
-
-    width: 50px;
-    height: 50px;
-
-    color: white;
-    background: red;
-    border: 2px solid #FFFFFF;
-    cursor: pointer;
-}
-
-.portfolio__bank-img,
-.portfolio__soider-img {
-    display: none;
-}
-
-
 @media (max-width:1366px) {
     .portfolio__title {
-        font-size: 60px;
+        font-size: 50px;
     }
 
     .portfolio__game-img {
@@ -88,7 +84,7 @@
 
 @media (max-width:1024px) {
     .portfolio__title {
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .portfolio__game-img {
